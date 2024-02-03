@@ -1,0 +1,97 @@
+#container{
+    font-size: 40px;
+    margin: 128px auto;
+    width : 768px;
+}
+
+h1{
+    text-align: center;
+    color: #f1f1f1;
+    text-shadow: 0 2px 2px rgba(0,0,0, .8) ;
+    margin-bottom: 32px;
+}
+
+
+#calculatrice{
+    margin: 0 auto;
+    background-color: #454545;
+    border : 1px solid #3D3D3D;
+    width: 340px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, .8);
+    border-radius : 6px;
+}
+
+#header{
+    padding : 10px;
+}
+
+.textArea{
+    text-align: right;
+    background-color: #121212;
+    border : none;
+    color : #f1f1f1;
+    font-size: 22px;
+    padding: 15px 41px;
+    border-radius : 6px;
+    width: 235px;
+}
+
+#body{
+    padding: 0 12px 10px 12px;
+}
+
+.clavier{
+    cursor: default;
+    text-align: center;
+    font-size: 22px;
+    padding: 7px 31px 7px 22px;
+    text-shadow: 0 -1px 1px #000;
+    color: #f1f1f1;
+    font-weight: bold;
+    display : inline-block;
+    border-top : 1px solid #777;
+    width: 34px;
+    background : linear-gradient(#5F5F5F 0%, #404040 100%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .8);
+    margin-bottom: 8px;
+    margin-right: 0.58rem;
+    border-radius: 6px;
+}
+
+.log,.exp,.cos,.sin{
+    text-align: initial;
+    font-size: 22px;
+    padding: 7px 45px 7px 10px;
+}
+
+.sin{
+    text-align: initial;
+    padding: 7px 43px 7px 10px;
+}
+
+.reset{
+    text-align: center;
+    font-size: 22px;
+    padding: 7px 73px 7px 47px;
+}
+
+.result{
+    text-align: center;
+    font-size: 22px;
+    padding: 7px 61px 7px 54px;
+}
+
+.clavier:hover{
+    background : linear-gradient(#f1f1f1 0%, #5F5F5F 100%);
+    color : #404040 ;
+    font-weight: unset;
+    transition:  all 0.2s ease-in-out;
+}
+
+.erreur{
+    color :red;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-right: 15px ;
+}

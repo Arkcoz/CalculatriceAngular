@@ -1,0 +1,42 @@
+<div id="container">
+    <h1>Calculatrice scientifique</h1>
+    <div id="calculatrice">
+      <div id="header">
+        <input type="text" name="textArea" class="textArea" [(ngModel)]="resultat" readonly/>
+      </div>
+  
+      <div id="body">
+        <input type="submit" name="clavier" class="clavier" value="7" (click)="add('7')" />
+        <input type="submit" name="clavier" class="clavier" value="8" (click)="add('8')"/>
+        <input type="submit" name="clavier" class="clavier" value="9" (click)="add('9')"/>
+        <input type="submit" name="clavier" class="clavier" value="+" (click)="add('+')"/>
+        <input type="submit" name="clavierSpe" class="clavier log" value="log" (click)="add('log(')"/>
+  
+        <input type="submit" name="clavier" class="clavier" value="4" (click)="add('4')"/>
+        <input type="submit" name="clavier" class="clavier" value="5" (click)="add('5')"/>
+        <input type="submit" name="clavier" class="clavier" value="6" (click)="add('6')"/>
+        <input type="submit" name="clavier" class="clavier" value="-" (click)="add('-')"/>
+        <input type="submit" name="clavierSpe" class="clavier exp" value="exp" (click)="add('exp(')"/>
+  
+        <input type="submit" name="clavier" class="clavier" value="1" (click)="add('1')"/>
+        <input type="submit" name="clavier" class="clavier" value="2" (click)="add('2')"/>
+        <input type="submit" name="clavier" class="clavier" value="3" (click)="add('3')"/>
+        <input type="submit" name="clavier" class="clavier" value="*" (click)="add('*')"/>
+        <input type="submit" name="clavierSpe" class="clavier cos" value="cos" (click)="add('cos(')"/>
+  
+        <input type="submit" name="clavier" class="clavier" value="0" (click)="add('0')"/>
+        <input type="submit" name="clavier"  class="clavier" value="(" (click)="add('(')"/>
+        <input type="submit" name="clavier"  class="clavier" value=")" (click)="add(')')"/>
+        <input type="submit" name="clavier" class="clavier" value="/" (click)="add('/')"/>
+        <input type="submit" name="clavierSpe" class="clavier sin" value="sin" (click)="add('sin(')"/>
+  
+        <input type="submit" name="clavier"  class="clavier" value="." (click)="add('.')"/>
+        <input type="submit" name="reset"   class="clavier reset" value="CE" (click)="reset()"/>
+        <input type="submit" name="result"  class="clavier result" value="=" (click)="calculer()"/>
+      </div>
+
+      <div *ngIf="erreur" class="erreur">
+        {{erreur}}
+      </div>
+    </div>
+  </div>
